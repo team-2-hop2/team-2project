@@ -1,14 +1,19 @@
-import './App.css';
-import { Header } from './components/header';
-import { Blog } from './components/blog';
+import { BlogPost } from "./pages/BlogPost";
+import{createBrowserRouter, RouterProvider} from 'react-router-dom'
+
+
+
+const router = createBrowserRouter([
+  {
+    path:"/blog",
+    element:<BlogPost/>
+  },
+])
+
+
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <header className="App-header">
-        <Blog/>
-      </header>
-    </div>
+   <RouterProvider router={router} />
   );
 }
 
