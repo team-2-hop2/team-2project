@@ -1,11 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
-import { Header } from './components/header';
+import { Header } from './components/header/Header';
+import { LandingPage } from './pages/LandingPage';
+
 function App() {
   return (
-    <div className="App">
+    <div>
       <Header />
-     
+      <LandingPage/>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -26,3 +27,4 @@ function App() {
 }
 
 export default App;
+// test
