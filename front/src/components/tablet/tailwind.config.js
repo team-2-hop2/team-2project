@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./comments.jsx"],
+  content: ["./Tablet"],
   theme: {
     extend: {},
   },

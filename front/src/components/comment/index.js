@@ -1,2 +1,2 @@
-export * from "./comments"
 import './index.css';
+export * from "./comments"
