@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react'
 import mg from './star.png'
-import mg2 from "../tablet/Ellipse.png"
+import mg2 from "./Ellipse.png"
 const styles = {
   block : {
     height: "367px",
