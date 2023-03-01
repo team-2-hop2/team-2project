@@ -1,3 +1,4 @@
+/* eslint-disable eqeqeq */
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react'
 import mg from './star.png'
@@ -30,15 +31,34 @@ const styles = {
     paddingTop: 34,
   }
 }
- const Comments = () => {
+
+const Comments = () => {
+  const Star = (a) => {
+    const array = new Array(a.a).fill("0")
+
+    return (
+      <div>
+        {
+        array.map((e,i) => {
+          return (
+            <img key={i} src={mg} className="h-[26px] w-[26px] inline pr-[5px] "></img> 
+        )
+      })}
+    </div>
+      
+    )
+   } 
   return (
     <div style={styles.block} className="shadow-2xl shadow-black-200/50">
       <div style={styles.size}>
-      <img src={mg} style={styles.logo}></img>
+        <div className='mr-[180px]'>
+            <Star a = {4}/>
+        </div>
+       
         <div style={styles.letter}>Give everyone you work with—inside<br></br> and outside your emoji, keep<br></br> conversations focused in channels, and <br></br>simplify all your communication into<br></br> one place.</div>
         <div className='flex space-x-4 pt-[50px]'>
           <img src={mg2} className="h-[56px] w-[56px]"></img> 
-          <div>Amy Klassen</div>  
+          <div className='text-xl pt-[10px] font-roboto'>Amy Klassen</div>  
         </div>
         
      </div>
