@@ -1,5 +1,6 @@
 import './App.css';
-import { Header } from './components/header/Header';
+import { Header } from './components/header';
+import {Footer} from './components/footer'
 import { LandingPage } from './pages/LandingPage';
 
 function App() {
@@ -8,7 +9,6 @@ function App() {
       <Header />
       <LandingPage/>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -21,6 +21,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <Footer/>
     </div>
     
   );
