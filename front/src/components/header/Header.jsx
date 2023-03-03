@@ -2,7 +2,7 @@ import React from "react";
 
 export const Header = () => {
   return (
-    <div className="fixed flex flex-row items-center justify-between py-5 px-10 top-0 w-full h-[90px] ">
+    <div className="fixed flex flex-row items-center justify-between py-5 px-10 top-0 w-full h-[90px] z-50 ">
       <div className="font-extrabold text-white h-fit font-Mulish text-mt">
         team <div className="text-[#0BBEF2] inline-block">.</div>
       </div>
